@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<title>WESEN MATERIALS | WPC · SPC · PVC Decorative Materials</title>
+
+<meta name="description" content="WESEN MATERIALS - Professional supplier of Indoor WPC, Outdoor WPC, PVC Marble Panels and SPC Flooring solutions.">
+<meta name="keywords" content="WPC Panel, SPC Flooring, PVC Marble Panel, Outdoor WPC, Interior Wall Panel">
+<meta name="theme-color" content="#0d0d0d">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Montserrat',sans-serif;
+    background:#0b0b0b;
+    color:#ffffff;
+    overflow-x:hidden;
+    line-height:1.6;
+}
+
+/* =========================
+   VARIABLES
+========================= */
+
+:root{
+    --gold:#c89b63;
+    --gold-hover:#ddb27e;
+    --dark:#0b0b0b;
+    --dark-light:#151515;
+    --gray:#b8b8b8;
+    --border:#262626;
+    --transition:.35s ease;
+    --shadow:0 10px 30px rgba(0,0,0,.35);
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+img{
+    width:100%;
+    display:block;
+}
+
+a{
+    text-decoration:none;
+    color:#fff;
+}
+
+section{
+    position:relative;
+}
+
+.container{
+    width:min(1200px,92%);
+    margin:auto;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    transition:var(--transition);
+    padding:22px 0;
+}
+
+.navbar.scrolled{
+    background:rgba(0,0,0,.82);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.nav-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:3px;
+}
+
+.logo span{
+    color:var(--gold);
+}
+
+.nav-links{
+    display:flex;
+    gap:36px;
+}
+
+.nav-links a{
+    font-size:14px;
+    letter-spacing:1px;
+    position:relative;
+    transition:var(--transition);
+}
+
+.nav-links a::after{
+    content:'';
+    position:absolute;
+    left:0;
+    bottom:-6px;
+    width:0;
+    height:1px;
+    background:var(--gold);
+    transition:var(--transition);
+}
+
+.nav-links a:hover{
+    color:var(--gold);
+}
+
+.nav-links a:hover::after{
+    width:100%;
+}
+
+.mobile-toggle{
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
+    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2000&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+}
+
+.hero-content{
+    max-width:900px;
+}
+
+.hero-subtitle{
+    color:var(--gold);
+    letter-spacing:4px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:76px;
+    line-height:1.1;
+    margin-bottom:30px;
+    font-weight:800;
+}
+
+.hero p{
+    max-width:720px;
+    color:#d6d6d6;
+    font-size:18px;
+    margin-bottom:42px;
+}
+
+.hero-btns{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:16px 34px;
+    border:1px solid var(--gold);
+    font-size:14px;
+    letter-spacing:1px;
+    transition:var(--transition);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.btn-primary{
+    background:var(--gold);
+    color:#fff;
+}
+
+.btn-primary:hover{
+    background:var(--gold-hover);
+    transform:translateY(-3px);
+}
+
+.btn-outline:hover{
+    background:var(--gold);
+    transform:translateY(-3px);
+}
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section{
+    padding:120px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:70px;
+}
+
+.section-title h2{
+    font-size:44px;
+    margin-bottom:16px;
+}
+
+.section-title p{
+    color:var(--gray);
+    max-width:700px;
+    margin:auto;
+}
+
+/* =========================
+   PRODUCTS
+========================= */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:var(--dark-light);
+    border:1px solid var(--border);
+    overflow:hidden;
+    transition:var(--transition);
+    position:relative;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    border-color:var(--gold);
+    box-shadow:var(--shadow);
+}
+
+.product-image{
+    overflow:hidden;
+}
+
+.product-image img{
+    height:250px;
+    object-fit:cover;
+    transition:transform .6s ease;
+}
+
+.product-card:hover img{
+    transform:scale(1.08);
+}
+
+.product-content{
+    padding:30px;
+}
+
+.product-content h3{
+    font-size:24px;
+    margin-bottom:16px;
+}
+
+.product-content p{
+    color:var(--gray);
+    font-size:14px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:70px;
+    align-items:center;
+}
+
+.about-image img{
+    border-radius:10px;
+}
+
+.about-content h2{
+    font-size:48px;
+    margin-bottom:26px;
+}
+
+.about-content p{
+    color:var(--gray);
+    margin-bottom:20px;
+}
+
+/* =========================
+   CTA
+========================= */
+
+.cta{
+    background:
+    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
+    url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    text-align:center;
+}
+
+.cta h2{
+    font-size:52px;
+    margin-bottom:24px;
+}
+
+.cta p{
+    max-width:760px;
+    margin:auto;
+    color:#d5d5d5;
+    margin-bottom:40px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#070707;
+    border-top:1px solid rgba(255,255,255,.05);
+    padding:70px 0 40px;
+}
+
+.footer-content{
+    text-align:center;
+}
+
+.footer h3{
+    font-size:32px;
+    margin-bottom:16px;
+}
+
+.footer p{
+    color:#8f8f8f;
+    margin-bottom:10px;
+}
+
+.footer-bottom{
+    margin-top:40px;
+    padding-top:30px;
+    border-top:1px solid rgba(255,255,255,.05);
+    color:#666;
+    font-size:14px;
+}
+
+/* =========================
+   WHATSAPP FLOAT
+========================= */
+
+.whatsapp{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+    width:62px;
+    height:62px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:28px;
+    z-index:999;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    transition:var(--transition);
+}
+
+.whatsapp:hover{
+    transform:translateY(-5px) scale(1.05);
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:1s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:960px){
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        position:absolute;
+        top:90px;
+        right:0;
+        background:#111;
+        width:100%;
+        flex-direction:column;
+        align-items:center;
+        padding:30px 0;
+        display:none;
+        border-top:1px solid rgba(255,255,255,.05);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .mobile-toggle{
+        display:block;
+    }
+
+    .hero{
+        text-align:center;
+    }
+
+    .hero-content{
+        margin:auto;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .section{
+        padding:90px 0;
+    }
+
+    .section-title h2{
+        font-size:34px;
+    }
+
+    .cta h2{
+        font-size:38px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar" id="navbar">
+
+    <div class="container nav-inner">
+
+        <div class="logo">
+            WESEN <span>MATERIALS</span>
+        </div>
+
+        <nav class="nav-links" id="navLinks">
+
+            <a href="#">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#about">ABOUT</a>
+            <a href="#contact">CONTACT</a>
+
+        </nav>
+
+        <div class="mobile-toggle" id="mobileToggle">
+            ☰
+        </div>
+
+    </div>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content fade-up">
+
+            <div class="hero-subtitle">
+                INTERIOR & EXTERIOR MATERIAL SOLUTIONS
+            </div>
+
+            <h1>
+                MODERN DECORATIVE MATERIALS FOR GLOBAL PROJECTS
+            </h1>
+
+            <p>
+                WESEN MATERIALS specializes in Indoor WPC, Outdoor WPC,
+                PVC Marble Panels and SPC Flooring solutions for commercial
+                and residential applications worldwide.
+            </p>
+
+            <div class="hero-btns">
+
+                <a href="#products" class="btn btn-primary">
+                    EXPLORE PRODUCTS
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    CONTACT US
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTS -->
+
+<section class="section" id="products">
+
+    <div class="container">
+
+        <div class="section-title fade-up">
+
+            <h2>OUR PRODUCTS</h2>
+
+            <p>
+                Innovative decorative material systems designed for modern spaces.
+            </p>
+
+        </div>
+
+        <div class="product-grid">
+
+            <div class="product-card fade-up">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Indoor WPC</h3>
+
+                    <p>
+                        Elegant interior wall panel systems with wood texture,
+                        moisture resistance and fast installation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="product-card fade-up">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Outdoor WPC</h3>
+
+                    <p>
+                        Durable exterior cladding and decking solutions for
+                        outdoor architectural environments.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="product-card fade-up">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+                </div>
+
+                <div class="product-content">
+
+                    <h3>PVC Marble Panel</h3>
+
+                    <p>
+                        Luxury marble decorative panels with lightweight structure
+                        and premium surface aesthetics.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="product-card fade-up">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+                </div>
+
+                <div class="product-content">
+
+                    <h3>SPC Flooring</h3>
+
+                    <p>
+                        Waterproof rigid core flooring with superior stability,
+                        durability and modern appearance.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="section" id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div class="about-image fade-up">
+
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop">
+
+            </div>
+
+            <div class="about-content fade-up">
+
+                <h2>ABOUT WESEN</h2>
+
+                <p>
+                    WESEN MATERIALS focuses on innovative interior and exterior
+                    decorative materials for global markets.
+                </p>
+
+                <p>
+                    We provide modern material solutions combining aesthetics,
+                    durability and efficient installation systems.
+                </p>
+
+                <p>
+                    Our mission is to build long-term partnerships through
+                    stable quality, professional service and continuous innovation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="section cta">
+
+    <div class="container fade-up">
+
+        <h2>BUILD MODERN SPACES WITH WESEN</h2>
+
+        <p>
+            Professional decorative material supplier for distributors,
+            contractors, wholesalers and project developers worldwide.
+        </p>
+
+        <a href="#contact" class="btn btn-primary">
+            GET IN TOUCH
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer" id="contact">
+
+    <div class="container footer-content">
+
+        <h3>WESEN MATERIALS</h3>
+
+        <p>Email: info@wesenmaterials.com</p>
+
+        <p>WPC · SPC · PVC Decorative Material Solutions</p>
+
+        <div class="footer-bottom">
+            © 2026 WESEN MATERIALS. All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- WHATSAPP -->
+
+<a
+href="https://wa.me/8613800000000"
+target="_blank"
+class="whatsapp"
+>
+✆
+</a>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+/* =========================
+   NAVBAR SCROLL EFFECT
+========================= */
+
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('scroll', () => {
+
+    if(window.scrollY > 50){
+        navbar.classList.add('scrolled');
+    }else{
+        navbar.classList.remove('scrolled');
+    }
+
+});
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+const mobileToggle = document.getElementById('mobileToggle');
+const navLinks = document.getElementById('navLinks');
+
+mobileToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+/* =========================
+   SCROLL ANIMATION
+========================= */
+
+const fadeElements = document.querySelectorAll('.fade-up');
+
+const observer = new IntersectionObserver((entries)=>{
+
+    entries.forEach(entry=>{
+
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+
+    });
+
+},{
+    threshold:0.15
+});
+
+fadeElements.forEach(el=>{
+    observer.observe(el);
+});
+
+/* =========================
+   CLOSE MOBILE MENU
+========================= */
+
+document.querySelectorAll('.nav-links a').forEach(link=>{
+
+    link.addEventListener('click',()=>{
+
+        navLinks.classList.remove('active');
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
