@@ -1,543 +1,774 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>WESEN MATERIALS | WPC, SPC & PVC Decorative Materials</title>
 
-<title>WESEN MATERIALS | WPC · SPC · PVC Decorative Materials</title>
-
-<meta name="description" content="WESEN MATERIALS - Professional supplier of Indoor WPC, Outdoor WPC, PVC Marble Panels and SPC Flooring solutions.">
+<meta name="description" content="WESEN MATERIALS supplies Indoor WPC, Outdoor WPC, PVC Marble Panels and SPC Flooring for commercial and residential projects worldwide.">
 <meta name="keywords" content="WPC Panel, SPC Flooring, PVC Marble Panel, Outdoor WPC, Interior Wall Panel">
-<meta name="theme-color" content="#0d0d0d">
+<meta name="theme-color" content="#0b0b0b">
+<meta property="og:title" content="WESEN MATERIALS | Decorative Material Solutions">
+<meta property="og:description" content="Modern WPC, SPC and PVC decorative material systems for global projects.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://wesenmaterials.com">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
-
 /* =========================
    RESET
 ========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
-    font-family:'Montserrat',sans-serif;
-    background:#0b0b0b;
-    color:#ffffff;
-    overflow-x:hidden;
-    line-height:1.6;
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #0b0b0b;
+    color: #ffffff;
+    overflow-x: hidden;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* =========================
    VARIABLES
 ========================= */
 
-:root{
-    --gold:#c89b63;
-    --gold-hover:#ddb27e;
-    --dark:#0b0b0b;
-    --dark-light:#151515;
-    --gray:#b8b8b8;
-    --border:#262626;
-    --transition:.35s ease;
-    --shadow:0 10px 30px rgba(0,0,0,.35);
+:root {
+    --gold: #c89b63;
+    --gold-hover: #ddb27e;
+    --gold-soft: rgba(200, 155, 99, .16);
+    --dark: #0b0b0b;
+    --dark-light: #151515;
+    --dark-panel: #101010;
+    --gray: #b8b8b8;
+    --gray-strong: #d8d8d8;
+    --border: #262626;
+    --border-soft: rgba(255, 255, 255, .08);
+    --transition: .28s ease;
+    --shadow: 0 18px 45px rgba(0, 0, 0, .34);
 }
 
 /* =========================
    GLOBAL
 ========================= */
 
-img{
-    width:100%;
-    display:block;
+img {
+    width: 100%;
+    display: block;
 }
 
-a{
-    text-decoration:none;
-    color:#fff;
+a {
+    text-decoration: none;
+    color: #fff;
 }
 
-section{
-    position:relative;
+a:focus-visible,
+button:focus-visible {
+    outline: 2px solid var(--gold-hover);
+    outline-offset: 4px;
 }
 
-.container{
-    width:min(1200px,92%);
-    margin:auto;
+section {
+    position: relative;
+    scroll-margin-top: 88px;
+}
+
+.container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+.skip-link {
+    position: fixed;
+    top: 14px;
+    left: 14px;
+    z-index: 1000;
+    padding: 10px 14px;
+    background: var(--gold);
+    color: #111;
+    font-weight: 700;
+    transform: translateY(-150%);
+    transition: transform var(--transition);
+}
+
+.skip-link:focus {
+    transform: translateY(0);
 }
 
 /* =========================
    NAVBAR
 ========================= */
 
-.navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    z-index:999;
-    transition:var(--transition);
-    padding:22px 0;
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: padding var(--transition), background var(--transition), border-color var(--transition);
+    padding: 22px 0;
 }
 
-.navbar.scrolled{
-    background:rgba(0,0,0,.82);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(255,255,255,.05);
+.navbar.scrolled {
+    background: rgba(0, 0, 0, .84);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border-soft);
+    padding: 15px 0;
 }
 
-.nav-inner{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 28px;
 }
 
-.logo{
-    font-size:28px;
-    font-weight:800;
-    letter-spacing:3px;
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    white-space: nowrap;
 }
 
-.logo span{
-    color:var(--gold);
+.logo span {
+    color: var(--gold);
 }
 
-.nav-links{
-    display:flex;
-    gap:36px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 34px;
 }
 
-.nav-links a{
-    font-size:14px;
-    letter-spacing:1px;
-    position:relative;
-    transition:var(--transition);
+.nav-links a {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color var(--transition);
 }
 
-.nav-links a::after{
-    content:'';
-    position:absolute;
-    left:0;
-    bottom:-6px;
-    width:0;
-    height:1px;
-    background:var(--gold);
-    transition:var(--transition);
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width var(--transition);
 }
 
-.nav-links a:hover{
-    color:var(--gold);
+.nav-links a:hover {
+    color: var(--gold);
 }
 
-.nav-links a:hover::after{
-    width:100%;
+.nav-links a:hover::after {
+    width: 100%;
 }
 
-.mobile-toggle{
-    display:none;
-    font-size:30px;
-    cursor:pointer;
+.mobile-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    border: 1px solid var(--border-soft);
+    background: rgba(255, 255, 255, .04);
+    color: #fff;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.mobile-toggle span {
+    position: relative;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    transition: background var(--transition);
+}
+
+.mobile-toggle span::before,
+.mobile-toggle span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    transition: transform var(--transition), top var(--transition);
+}
+
+.mobile-toggle span::before {
+    top: -7px;
+}
+
+.mobile-toggle span::after {
+    top: 7px;
+}
+
+.mobile-toggle[aria-expanded="true"] span {
+    background: transparent;
+}
+
+.mobile-toggle[aria-expanded="true"] span::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.mobile-toggle[aria-expanded="true"] span::after {
+    top: 0;
+    transform: rotate(-45deg);
 }
 
 /* =========================
    HERO
 ========================= */
 
-.hero{
-    min-height:100vh;
-
+.hero {
+    min-height: 100vh;
     background:
-    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.78)),
-    url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2000&auto=format&fit=crop');
-
-    background-size:cover;
-    background-position:center;
-
-    display:flex;
-    align-items:center;
+        linear-gradient(90deg, rgba(0, 0, 0, .84) 0%, rgba(0, 0, 0, .68) 44%, rgba(0, 0, 0, .44) 100%),
+        url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
 }
 
-.hero-content{
-    max-width:900px;
+.hero::after {
+    content: '';
+    position: absolute;
+    inset: auto 0 0;
+    height: 140px;
+    background: linear-gradient(180deg, rgba(11, 11, 11, 0), var(--dark));
+    pointer-events: none;
 }
 
-.hero-subtitle{
-    color:var(--gold);
-    letter-spacing:4px;
-    font-size:14px;
-    margin-bottom:20px;
+.hero-content {
+    max-width: 900px;
+    padding-top: 90px;
+    position: relative;
+    z-index: 1;
 }
 
-.hero h1{
-    font-size:76px;
-    line-height:1.1;
-    margin-bottom:30px;
-    font-weight:800;
+.hero-subtitle {
+    color: var(--gold);
+    letter-spacing: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 
-.hero p{
-    max-width:720px;
-    color:#d6d6d6;
-    font-size:18px;
-    margin-bottom:42px;
+.hero h1 {
+    font-size: 76px;
+    line-height: 1.06;
+    margin-bottom: 30px;
+    font-weight: 800;
+    max-width: 960px;
 }
 
-.hero-btns{
-    display:flex;
-    gap:20px;
-    flex-wrap:wrap;
+.hero p {
+    max-width: 720px;
+    color: #e1e1e1;
+    font-size: 18px;
+    margin-bottom: 42px;
 }
 
-.btn{
-    padding:16px 34px;
-    border:1px solid var(--gold);
-    font-size:14px;
-    letter-spacing:1px;
-    transition:var(--transition);
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
+.hero-btns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
 }
 
-.btn-primary{
-    background:var(--gold);
-    color:#fff;
+.btn {
+    min-height: 52px;
+    padding: 15px 30px;
+    border: 1px solid var(--gold);
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: transform var(--transition), background var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
 }
 
-.btn-primary:hover{
-    background:var(--gold-hover);
-    transform:translateY(-3px);
+.btn-primary {
+    background: var(--gold);
+    color: #111;
+    box-shadow: 0 16px 28px rgba(200, 155, 99, .2);
 }
 
-.btn-outline:hover{
-    background:var(--gold);
-    transform:translateY(-3px);
+.btn-primary:hover {
+    background: var(--gold-hover);
+    border-color: var(--gold-hover);
+    transform: translateY(-3px);
+}
+
+.btn-outline:hover {
+    background: var(--gold);
+    color: #111;
+    transform: translateY(-3px);
 }
 
 /* =========================
    SECTION TITLE
 ========================= */
 
-.section{
-    padding:120px 0;
+.section {
+    padding: 118px 0;
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:70px;
+.section-title {
+    text-align: center;
+    margin-bottom: 66px;
 }
 
-.section-title h2{
-    font-size:44px;
-    margin-bottom:16px;
+.section-title h2 {
+    font-size: 44px;
+    line-height: 1.15;
+    margin-bottom: 16px;
 }
 
-.section-title p{
-    color:var(--gray);
-    max-width:700px;
-    margin:auto;
+.section-title p {
+    color: var(--gray);
+    max-width: 700px;
+    margin: auto;
 }
 
 /* =========================
    PRODUCTS
 ========================= */
 
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:30px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 28px;
 }
 
-.product-card{
-    background:var(--dark-light);
-    border:1px solid var(--border);
-    overflow:hidden;
-    transition:var(--transition);
-    position:relative;
+.product-card {
+    background: linear-gradient(180deg, #171717 0%, var(--dark-panel) 100%);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform var(--transition), border-color var(--transition), box-shadow var(--transition);
+    position: relative;
+    border-radius: 8px;
 }
 
-.product-card:hover{
-    transform:translateY(-10px);
-    border-color:var(--gold);
-    box-shadow:var(--shadow);
+.product-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(200, 155, 99, .7);
+    box-shadow: var(--shadow);
 }
 
-.product-image{
-    overflow:hidden;
+.product-image {
+    overflow: hidden;
+    background: #111;
 }
 
-.product-image img{
-    height:250px;
-    object-fit:cover;
-    transition:transform .6s ease;
+.product-image img {
+    height: 250px;
+    object-fit: cover;
+    transition: transform .55s ease, filter .55s ease;
 }
 
-.product-card:hover img{
-    transform:scale(1.08);
+.product-card:hover img {
+    transform: scale(1.06);
+    filter: saturate(1.05) contrast(1.04);
 }
 
-.product-content{
-    padding:30px;
+.product-content {
+    padding: 30px;
 }
 
-.product-content h3{
-    font-size:24px;
-    margin-bottom:16px;
+.product-content h3 {
+    font-size: 23px;
+    line-height: 1.22;
+    margin-bottom: 14px;
 }
 
-.product-content p{
-    color:var(--gray);
-    font-size:14px;
+.product-content p {
+    color: var(--gray);
+    font-size: 14px;
 }
 
 /* =========================
    ABOUT
 ========================= */
 
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:70px;
-    align-items:center;
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
 }
 
-.about-image img{
-    border-radius:10px;
+.about-image {
+    position: relative;
 }
 
-.about-content h2{
-    font-size:48px;
-    margin-bottom:26px;
+.about-image::after {
+    content: '';
+    position: absolute;
+    inset: 18px -18px -18px 18px;
+    border: 1px solid var(--gold-soft);
+    z-index: -1;
+    border-radius: 8px;
 }
 
-.about-content p{
-    color:var(--gray);
-    margin-bottom:20px;
+.about-image img {
+    border-radius: 8px;
+    min-height: 420px;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-size: 48px;
+    line-height: 1.12;
+    margin-bottom: 26px;
+}
+
+.about-content p {
+    color: var(--gray-strong);
+    margin-bottom: 18px;
 }
 
 /* =========================
    CTA
 ========================= */
 
-.cta{
+.cta {
     background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.82)),
-    url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop');
-
-    background-size:cover;
-    background-position:center;
-
-    text-align:center;
+        linear-gradient(rgba(0, 0, 0, .76), rgba(0, 0, 0, .84)),
+        url('https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=2000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
 }
 
-.cta h2{
-    font-size:52px;
-    margin-bottom:24px;
+.cta .container {
+    max-width: 960px;
 }
 
-.cta p{
-    max-width:760px;
-    margin:auto;
-    color:#d5d5d5;
-    margin-bottom:40px;
+.cta h2 {
+    font-size: 52px;
+    line-height: 1.12;
+    margin-bottom: 24px;
+}
+
+.cta p {
+    max-width: 760px;
+    margin: 0 auto 40px;
+    color: #dcdcdc;
 }
 
 /* =========================
    FOOTER
 ========================= */
 
-.footer{
-    background:#070707;
-    border-top:1px solid rgba(255,255,255,.05);
-    padding:70px 0 40px;
+.footer {
+    background: #070707;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+    padding: 70px 0 40px;
 }
 
-.footer-content{
-    text-align:center;
+.footer-content {
+    text-align: center;
 }
 
-.footer h3{
-    font-size:32px;
-    margin-bottom:16px;
+.footer h3 {
+    font-size: 32px;
+    line-height: 1.2;
+    margin-bottom: 16px;
 }
 
-.footer p{
-    color:#8f8f8f;
-    margin-bottom:10px;
+.footer p {
+    color: #9c9c9c;
+    margin-bottom: 10px;
 }
 
-.footer-bottom{
-    margin-top:40px;
-    padding-top:30px;
-    border-top:1px solid rgba(255,255,255,.05);
-    color:#666;
-    font-size:14px;
+.footer a {
+    color: #d7d7d7;
+    transition: color var(--transition);
+}
+
+.footer a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, .05);
+    color: #6f6f6f;
+    font-size: 14px;
 }
 
 /* =========================
    WHATSAPP FLOAT
 ========================= */
 
-.whatsapp{
-    position:fixed;
-    right:24px;
-    bottom:24px;
-    width:62px;
-    height:62px;
-    border-radius:50%;
-    background:#25D366;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:28px;
-    z-index:999;
-    box-shadow:0 10px 25px rgba(0,0,0,.3);
-    transition:var(--transition);
+.whatsapp {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #25D366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    z-index: 999;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .32);
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 
-.whatsapp:hover{
-    transform:translateY(-5px) scale(1.05);
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 18px 34px rgba(0, 0, 0, .36);
 }
 
 /* =========================
    ANIMATION
 ========================= */
 
-.fade-up{
-    opacity:0;
-    transform:translateY(40px);
-    transition:1s ease;
+.fade-up {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity .8s ease, transform .8s ease;
 }
 
-.fade-up.show{
-    opacity:1;
-    transform:translateY(0);
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* =========================
    MOBILE
 ========================= */
 
-@media(max-width:960px){
-
-    .hero h1{
-        font-size:52px;
+@media (max-width: 960px) {
+    .hero h1 {
+        font-size: 52px;
     }
 
-    .about-grid{
-        grid-template-columns:1fr;
+    .about-grid {
+        grid-template-columns: 1fr;
     }
 
+    .about-image::after {
+        inset: 14px -10px -14px 10px;
+    }
 }
 
-@media(max-width:768px){
-
-    .nav-links{
-        position:absolute;
-        top:90px;
-        right:0;
-        background:#111;
-        width:100%;
-        flex-direction:column;
-        align-items:center;
-        padding:30px 0;
-        display:none;
-        border-top:1px solid rgba(255,255,255,.05);
+@media (max-width: 768px) {
+    .navbar,
+    .navbar.scrolled {
+        padding: 14px 0;
     }
 
-    .nav-links.active{
-        display:flex;
+    .logo {
+        font-size: 21px;
+        letter-spacing: 2px;
     }
 
-    .mobile-toggle{
-        display:block;
+    .nav-links {
+        position: absolute;
+        top: calc(100% + 14px);
+        left: 4%;
+        right: 4%;
+        background: rgba(17, 17, 17, .97);
+        backdrop-filter: blur(14px);
+        width: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding: 10px;
+        border: 1px solid var(--border-soft);
+        border-radius: 8px;
+        box-shadow: var(--shadow);
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+        transition: opacity var(--transition), visibility var(--transition), transform var(--transition);
     }
 
-    .hero{
-        text-align:center;
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 
-    .hero-content{
-        margin:auto;
+    .nav-links a {
+        padding: 14px 12px;
+        text-align: center;
     }
 
-    .hero h1{
-        font-size:42px;
+    .nav-links a::after {
+        display: none;
     }
 
-    .hero p{
-        font-size:16px;
+    .mobile-toggle {
+        display: inline-flex;
+        flex: 0 0 auto;
     }
 
-    .section{
-        padding:90px 0;
+    .hero {
+        min-height: 92vh;
+        text-align: center;
+        background:
+            linear-gradient(rgba(0, 0, 0, .76), rgba(0, 0, 0, .82)),
+            url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600&auto=format&fit=crop');
+        background-size: cover;
+        background-position: center;
     }
 
-    .section-title h2{
-        font-size:34px;
+    .hero-content {
+        margin: auto;
+        padding-top: 78px;
     }
 
-    .cta h2{
-        font-size:38px;
+    .hero-subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
     }
 
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .btn {
+        width: min(100%, 280px);
+    }
+
+    .section {
+        padding: 88px 0;
+    }
+
+    .section-title {
+        margin-bottom: 44px;
+    }
+
+    .section-title h2,
+    .cta h2 {
+        font-size: 34px;
+    }
+
+    .about-content h2 {
+        font-size: 38px;
+    }
+
+    .about-image img {
+        min-height: 320px;
+    }
 }
 
+@media (max-width: 420px) {
+    .container {
+        width: min(100% - 32px, 1200px);
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .product-content {
+        padding: 24px;
+    }
+
+    .whatsapp {
+        right: 16px;
+        bottom: 16px;
+        width: 54px;
+        height: 54px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+    }
+
+    .fade-up {
+        opacity: 1;
+        transform: none;
+    }
+}
 </style>
-
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- NAVBAR -->
 
 <header class="navbar" id="navbar">
-
     <div class="container nav-inner">
-
-        <div class="logo">
+        <a class="logo" href="#" aria-label="WESEN MATERIALS home">
             WESEN <span>MATERIALS</span>
-        </div>
+        </a>
 
-        <nav class="nav-links" id="navLinks">
-
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
             <a href="#">HOME</a>
             <a href="#products">PRODUCTS</a>
             <a href="#about">ABOUT</a>
             <a href="#contact">CONTACT</a>
-
         </nav>
 
-        <div class="mobile-toggle" id="mobileToggle">
-            ☰
-        </div>
-
+        <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
+            <span aria-hidden="true"></span>
+        </button>
     </div>
-
 </header>
 
+<main id="main">
 <!-- HERO -->
 
-<section class="hero">
-
+<section class="hero" aria-label="WESEN MATERIALS introduction">
     <div class="container">
-
         <div class="hero-content fade-up">
-
             <div class="hero-subtitle">
-                INTERIOR & EXTERIOR MATERIAL SOLUTIONS
+                INTERIOR &amp; EXTERIOR MATERIAL SOLUTIONS
             </div>
 
             <h1>
@@ -551,7 +782,6 @@ section{
             </p>
 
             <div class="hero-btns">
-
                 <a href="#products" class="btn btn-primary">
                     EXPLORE PRODUCTS
                 </a>
@@ -559,131 +789,97 @@ section{
                 <a href="#contact" class="btn btn-outline">
                     CONTACT US
                 </a>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- PRODUCTS -->
 
 <section class="section" id="products">
-
     <div class="container">
-
         <div class="section-title fade-up">
-
             <h2>OUR PRODUCTS</h2>
 
             <p>
                 Innovative decorative material systems designed for modern spaces.
             </p>
-
         </div>
 
         <div class="product-grid">
-
-            <div class="product-card fade-up">
-
+            <article class="product-card fade-up">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Warm interior room with wood inspired wall and floor finishes" width="1200" height="800" loading="lazy" decoding="async">
                 </div>
 
                 <div class="product-content">
-
                     <h3>Indoor WPC</h3>
 
                     <p>
                         Elegant interior wall panel systems with wood texture,
                         moisture resistance and fast installation.
                     </p>
-
                 </div>
+            </article>
 
-            </div>
-
-            <div class="product-card fade-up">
-
+            <article class="product-card fade-up">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop" alt="Modern exterior architectural surface suitable for cladding projects" width="1200" height="800" loading="lazy" decoding="async">
                 </div>
 
                 <div class="product-content">
-
                     <h3>Outdoor WPC</h3>
 
                     <p>
                         Durable exterior cladding and decking solutions for
                         outdoor architectural environments.
                     </p>
-
                 </div>
+            </article>
 
-            </div>
-
-            <div class="product-card fade-up">
-
+            <article class="product-card fade-up">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1200&auto=format&fit=crop" alt="Bright marble style bathroom wall surface" width="1200" height="800" loading="lazy" decoding="async">
                 </div>
 
                 <div class="product-content">
-
                     <h3>PVC Marble Panel</h3>
 
                     <p>
                         Luxury marble decorative panels with lightweight structure
                         and premium surface aesthetics.
                     </p>
-
                 </div>
+            </article>
 
-            </div>
-
-            <div class="product-card fade-up">
-
+            <article class="product-card fade-up">
                 <div class="product-image">
-                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+                    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop" alt="Modern interior flooring with warm decorative finish" width="1200" height="800" loading="lazy" decoding="async">
                 </div>
 
                 <div class="product-content">
-
                     <h3>SPC Flooring</h3>
 
                     <p>
                         Waterproof rigid core flooring with superior stability,
                         durability and modern appearance.
                     </p>
-
                 </div>
-
-            </div>
-
+            </article>
         </div>
-
     </div>
-
 </section>
 
 <!-- ABOUT -->
 
 <section class="section" id="about">
-
     <div class="container">
-
         <div class="about-grid">
-
             <div class="about-image fade-up">
-
-                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop">
-
+                <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop" alt="Contemporary interior space showcasing decorative surfaces" width="1400" height="980" loading="lazy" decoding="async">
             </div>
 
             <div class="about-content fade-up">
-
                 <h2>ABOUT WESEN</h2>
 
                 <p>
@@ -700,21 +896,15 @@ section{
                     Our mission is to build long-term partnerships through
                     stable quality, professional service and continuous innovation.
                 </p>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
 
 <!-- CTA -->
 
 <section class="section cta">
-
     <div class="container fade-up">
-
         <h2>BUILD MODERN SPACES WITH WESEN</h2>
 
         <p>
@@ -725,29 +915,24 @@ section{
         <a href="#contact" class="btn btn-primary">
             GET IN TOUCH
         </a>
-
     </div>
-
 </section>
+</main>
 
 <!-- FOOTER -->
 
 <footer class="footer" id="contact">
-
     <div class="container footer-content">
-
         <h3>WESEN MATERIALS</h3>
 
-        <p>Email: info@wesenmaterials.com</p>
+        <p>Email: <a href="mailto:info@wesenmaterials.com">info@wesenmaterials.com</a></p>
 
-        <p>WPC · SPC · PVC Decorative Material Solutions</p>
+        <p>WPC &middot; SPC &middot; PVC Decorative Material Solutions</p>
 
         <div class="footer-bottom">
-            © 2026 WESEN MATERIALS. All Rights Reserved.
+            &copy; 2026 WESEN MATERIALS. All Rights Reserved.
         </div>
-
     </div>
-
 </footer>
 
 <!-- WHATSAPP -->
@@ -755,30 +940,32 @@ section{
 <a
 href="https://wa.me/8618280358285"
 target="_blank"
+rel="noopener noreferrer"
 class="whatsapp"
+aria-label="Contact WESEN MATERIALS on WhatsApp"
 >
-✆
+    &#9990;
 </a>
 
 <!-- JAVASCRIPT -->
 
 <script>
-
 /* =========================
    NAVBAR SCROLL EFFECT
 ========================= */
 
 const navbar = document.getElementById('navbar');
 
-window.addEventListener('scroll', () => {
-
-    if(window.scrollY > 50){
+function updateNavbar() {
+    if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
-    }else{
+    } else {
         navbar.classList.remove('scrolled');
     }
+}
 
-});
+updateNavbar();
+window.addEventListener('scroll', updateNavbar, { passive: true });
 
 /* =========================
    MOBILE MENU
@@ -787,8 +974,20 @@ window.addEventListener('scroll', () => {
 const mobileToggle = document.getElementById('mobileToggle');
 const navLinks = document.getElementById('navLinks');
 
+function setMenu(open) {
+    navLinks.classList.toggle('active', open);
+    mobileToggle.setAttribute('aria-expanded', String(open));
+    mobileToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+}
+
 mobileToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    setMenu(!navLinks.classList.contains('active'));
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+        setMenu(false);
+    }
 });
 
 /* =========================
@@ -797,39 +996,36 @@ mobileToggle.addEventListener('click', () => {
 
 const fadeElements = document.querySelectorAll('.fade-up');
 
-const observer = new IntersectionObserver((entries)=>{
-
-    entries.forEach(entry=>{
-
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }
-
+if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
     });
 
-},{
-    threshold:0.15
-});
-
-fadeElements.forEach(el=>{
-    observer.observe(el);
-});
+    fadeElements.forEach((el) => {
+        observer.observe(el);
+    });
+} else {
+    fadeElements.forEach((el) => {
+        el.classList.add('show');
+    });
+}
 
 /* =========================
    CLOSE MOBILE MENU
 ========================= */
 
-document.querySelectorAll('.nav-links a').forEach(link=>{
-
-    link.addEventListener('click',()=>{
-
-        navLinks.classList.remove('active');
-
+document.querySelectorAll('.nav-links a').forEach((link) => {
+    link.addEventListener('click', () => {
+        setMenu(false);
     });
-
 });
-
 </script>
-
 </body>
 </html>
